@@ -7,27 +7,35 @@
 }
 
 h1 {
+	margin-top:0;
+	margin-bottom: 0;
 	font-family: arial black;
 	font-size: 40px;
-	color: #666666;
+	color: #2c3e50;
 }
 
 h2 {
+	margin-top:0;
+	margin-bottom: 0;
 	font-family: arial black;
 	font-size: 32px;
-	color: #666666;
+	color: #2c3e50;
 }
 
 h3 {
-	font-family: arial bold;
+	margin-top:0;
+	margin-bottom: 0;
+	font-family: arial;
 	font-size: 28px;
-	color: #666666;
+	color: #2c3e50;
 }
 
 h4 {
-	font-family: arial bold;
+	margin-top:0;
+	margin-bottom: 0;
+	font-family: arial;
 	font-size: 24px;
-	color: #666666;
+	color: #2c3e50;
 }
 
 p {
@@ -36,17 +44,106 @@ p {
 	color: #666666;
 }
 
+ul {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+button {
+
+	text-decoration: none;
+
+}
+
 
 #app {
+
 
 
 	
 }
 
 .wrapper {
+	position: absolute;
+	top:0;
+	left:0;
 	height: 100vh;
 	width: 100vw;
 
 
 }
 
+nav{
+	display:flex;
+	width: 100%;
+
+}
+
+.logo {
+	object-fit: cover;
+}
+
+
+ul.nav-menu{
+	display:flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+li.nav-menu:hover {
+	color: #000000;
+
+}
+
+a:hover{
+
+}
+
+.hero { 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	height: 800px;
+	width: 100%;
+	background: rgb(240,249,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(240,249,255,1) 0%, rgba(203,235,255,1) 47%, rgba(161,219,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
+
+}
+
+.hero-button{
+	background-color: transparent;
+	color: #fff;
+	border: none;
+
+}
+
+.section{
+	box-sizing: border-box;
+	padding: 5%;
+	text-align: center;
+	min-height: 800px;
+}
+
+.one{
+	background-color: #ecf0f1;
+}
+
+.two {
+	background-color: #bdc3c7;
+}
+
+.three{
+	background-color: #A3A9AD;
+
+}
